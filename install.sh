@@ -19,20 +19,4 @@ for f in .??*; do
     ln -snfv ~/dotfiles/"$f" ~/
 done
 
-[ -e ~/.gitconfig.local ] || cp ~/dotfiles/.gitconfig.local.template ~/.gitconfig.local
-
-# emacs set up
-if which cask >/dev/null 2>&1; then
-  echo "setup .emacs.d..."
-  cd ${THIS_DIR}/.emacs.d
-  cask upgrade
-  cask install
-fi
-
-cat << END
-
-**************************************************
-DOTFILES SETUP FINISHED! bye.
-**************************************************
-
-END
+echo 'DOTFILES SETUP FINISHED!'
