@@ -15,6 +15,6 @@ export VISUAL='vim'
 export PAGER='less'
 
 # Customize to your needs...
-export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="$HOME/.jenv/bin:$HOME/go/bin:$PATH"
 eval "$(jenv init -)"
 eval "$(nodenv init -)"
