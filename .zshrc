@@ -17,4 +17,4 @@ export PAGER='less'
 # Customize to your needs...
 export PATH="$HOME/.jenv/bin:$HOME/go/bin:$PATH"
 eval "$(jenv init -)"
-eval "$(nodenv init -)"
+which nodenv >/dev/null && eval "$(nodenv init -)"
