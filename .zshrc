@@ -18,3 +18,6 @@ export PAGER='less'
 export PATH="$HOME/.jenv/bin:$HOME/go/bin:$PATH"
 which jenv >/dev/null && eval "$(jenv init -)"
 which nodenv >/dev/null && eval "$(nodenv init -)"
+
+# env for rustup
+test -e $HOME/.cargo/env && source $HOME/.cargo/env
